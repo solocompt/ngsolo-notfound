@@ -1,0 +1,337 @@
+/**
+ *  Do not remove the comment below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+$primary-color-dark: #000000;
+$primary-color: #000000;
+$primary-color-light: #222;
+$primary-color-text: #FFFFFF;
+$accent-color: #be1622;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+
+$warning-color: #8a6d3b;
+$success-color: #3C763D;
+$error-color: #A94442;
+
+$link-color: #50e3c2;
+
+button, select, html, textarea, input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.main-content {
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+.high-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 5px 12px;
+
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+.sub-title {
+    font-size: 14px;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.md-button {
+    border-radius: 1px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 4.6px;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.md-button.md-primary:not(.md-raised) {
+    padding: 17px 22px 17px 25px;
+    background-color: transparent;
+    border: solid 1px $primary-color;
+
+    &:hover {
+        border: solid 1px white;
+        background-color: $primary-color;
+        color: #d8d8d8;
+    }
+}
+
+#header .md-toolbar-tools .md-button {
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    min-width: 0;
+}
+
+.plans-row {
+    $active-color: #b8e986;
+    > div {
+        > div {
+            margin-left: 1px;
+            margin-right: 1px;
+            background-color: rgba(183, 232, 134, 0.3);
+
+            &.active {
+                background-color: $active-color;
+            }
+        }
+
+        &:nth-child(2) > div {
+            background-color: $active-color;
+        }
+    }
+
+    h6, p, .price-tag {
+        text-align: center;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 7px;
+        height: 26px;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+
+    .price-tag {
+        font-size: 15px;
+        line-height: 0.9;
+        margin-bottom: 24px;
+
+        span {
+            font-size: 11px;
+            line-height: 1.3;
+        }
+    }
+
+}
+
+#header {
+    position: relative;
+    z-index: 80;
+
+    .header-page {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: rgba(8, 0, 0, 0.9);
+
+        overflow: hidden;
+        max-height: 0;
+
+        &.active {
+            max-height: 1000px;
+        }
+
+        -webkit-transition: max-height 0.5s;
+        -moz-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+
+        .subtil-btn {
+            margin-bottom: 41px;
+        }
+
+        .md-button {
+            font-size: 18px;
+            line-height: 2.1;
+            text-transform: none;
+            letter-spacing: 0;
+            padding: 6px 15px;
+            min-width: 215px;
+            font-weight: normal;
+
+            &:hover, &.active {
+                font-weight: 600;
+            }
+        }
+    }
+
+    #menu-page > div {
+        padding: 97px 40px 67px 40px;
+    }
+
+    #profile-menu-page {
+        div {
+            padding: 40px 15px;
+
+            h6 {
+                font-size: 12px;
+                line-height: 3.2;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 2.1;
+                color: $link-color;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            .md-button {
+                font-size: 18px;
+                line-height: 2.1;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.subtil-btn {
+    &:hover, &.active, &:focus {
+        background: inherit !important;
+    }
+}
+
+#next-month-box-clock {
+    background: #3a3a3a;
+    padding-top: 92px;
+    padding-bottom: 73px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 0.7;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #d0021b;
+
+        margin-bottom: 13px;
+    }
+
+    #home-clock-wrapper {
+        div {
+            span:first-child {
+                font-size: 64px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            span:last-child {
+
+                font-size: 12px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.1;
+        text-align: center;
+    }
+}
+
+#footer {
+    background-color: #2f2f2f;
+
+    padding-top: 75px;
+    padding-bottom: 63px;
+
+    .address {
+        margin-top: 19px;
+
+        font-size: 12px;
+        line-height: 1.2;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.6;
+    }
+
+    .copy {
+        margin-top: 17px;
+
+        opacity: 0.6;
+        font-size: 10px;
+        line-height: 1.4;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.menu-separator {
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    div {
+        width: 20px;
+        border-bottom: solid 1px white;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 !important;
+    }
+}
+
+#contact-element {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+
+    div {
+        padding: 5px 10px;
+
+        md-icon {
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 7px;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.menu-option-auto-height {
+    height: auto !important;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/**
+ *  Do not remove the comment below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

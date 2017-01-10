@@ -1,0 +1,23 @@
+{
+    "name": "ngsolo-not-found",
+    "dependencies": {
+        "angular-ui-router": "~0.2.15",
+        "angular": "~1.5.3"
+    },
+    "authors": [
+        "Ighor Martins <ighor.martins@gmail.com>"
+    ],
+    "description": "Displays not found when nothing is found",
+    "main": "src/app/notfound/",
+    "keywords": [
+        "notfound"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "*",
+        "!src/app/notfound",
+        "!src/app/notfound/*"
+    ]
+}

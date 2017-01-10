@@ -8,7 +8,13 @@
         "Ighor Martins <ighor.martins@gmail.com>"
     ],
     "description": "Displays not found when nothing is found",
-    "main": "src/app/notfound/*",
+    "main": [
+        "src/app/notfound/notfound.module.js",
+        "src/app/notfound/notfound.404.controller.js",
+        "src/app/notfound/notfound.route.js",
+        "src/app/notfound/notfound.run.js",
+        "src/app/notfound/views/notfound.html"
+    ],
     "keywords": [
         "notfound"
     ],

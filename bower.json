@@ -8,7 +8,7 @@
         "Ighor Martins <ighor.martins@gmail.com>"
     ],
     "description": "Displays not found when nothing is found",
-    "main": "src/app/notfound/",
+    "main": "src/app/notfound/*",
     "keywords": [
         "notfound"
     ],
